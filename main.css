@@ -242,7 +242,7 @@ body {
 /*HEADER*/
 
 .main-header {
-  height: 230px;
+  height: 250px;
 }
 
 .logo {
@@ -274,6 +274,46 @@ body {
   padding: 20px;
   text-align: center;
   margin: auto;
+}
+
+.main-nav-small {
+  padding-top: 20px;
+}
+
+.main-nav-small input {
+  display: none;
+}
+
+.main-nav-small nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .15s ease;
+  width: 100%;
+}
+
+.main-nav-small input:checked ~ nav {
+  max-height: 500px;
+}
+
+.main-nav-small label {
+  color: #1ea5b2;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  padding: 5px 9px;
+  transition: all .15s ease;
+  border: 1px solid #cecfd5;
+  border-radius: 6px;
+}
+
+.main-nav-small li {
+  padding: 10px 0;
+  border-bottom: 1px solid #cecfd5;
+}
+
+.main-nav-small ul {
+  padding: 20px 0;
+  width: 100%;
 }
 
 /*CONTENT */
@@ -464,8 +504,6 @@ section {
   margin-top: 20px;
 }
 
-
-
 .footer-form-button-small {
   display: block;
   margin: auto;
@@ -531,9 +569,26 @@ section {
     padding: 0px;
     padding-top: 20px;
   }
+
+  .main-nav-small label {
+    float: right;
+  }
+
+  .main-nav-small ul {
+    padding-bottom: 50px;
+  }
+
+  .logo {
+    position: relative;
+    top: -30px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
+  .logo {
+    position: relative;
+    top: 0px;
+  }
 
   .aside-wrapper {
     height: 1522px;
