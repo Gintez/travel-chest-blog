@@ -11,14 +11,14 @@
   <header class="main-header">
     <div class="container">
       <div class="row">
-        <div class="col col-md-4">
+        <div class="col col-xs-12 col-md-4">
           <div class="logo">
             <img src="./images/Travel-Chest-logo.png" height="141px" width="224px">
           </div>
         </div>
-        <div class="col col-md-8">
+        <div class="col col-xs-12 col-md-8">
           <div class="col col-md-12">
-            <nav class="main-nav">
+            <nav class="main-nav hide-for-small">
               <ul>
                 <li>Home</li>
                 <li>About</li>
@@ -30,20 +30,20 @@
               </ul>
             </nav>
           </div>
-          <div class="col col-md-12">
-            <div class="social-wrapper">
-              <img src="./images/social-icons.png" width="114px" height="29px">
-            </div>
+          <div class="social-wrapper">
+            <img src="./images/social-icons.png" width="114px" height="29px">
           </div>
         </div>
       </div>
     </div>
   </header>
-  <main class="content-wrapper">
+  <div class="content-wrapper">
     <div class="container">
-      <div class="intro-wrapper">
-        <h1 class="intro-title">The Travel Chest Blog</h1>
-        <p class="intro-text">Duis auctor ultricies sapien pellentesque tincidunt. Duis dictum ante at orci ultrices, eget sollicitudin libero pellentesque amet eget.</p>
+      <div class="row">
+        <div class="intro-wrapper">
+          <h1 class="intro-title">The Travel Chest Blog</h1>
+          <p class="intro-text">Duis auctor ultricies sapien pellentesque tincidunt. Duis dictum ante at orci ultrices, eget sollicitudin libero pellentesque amet eget.</p>
+        </div>
       </div>
       <div class="row">
         <div class="col col-xs-12 col-md-6 col-lg-4">
@@ -78,6 +78,7 @@
             </div>
           </section>
         </div>
+
         <div class="col col-xs-12 col-md-6 col-lg-4">
           <section class="post-wrapper">
             <img src="./images/image-2.png" width="305px" height="221px">
@@ -109,6 +110,12 @@
               <button class="button post-button post-button-light-green">Read this post</button>
             </div>
           </section>
+        </div>
+        <div class="col col-xs-12 show-for-small">
+          <hr class="content-breakline">
+          <div class="load-button-wrapper">
+            <button class="button load-button">Load more posts</button>
+          </div>
         </div>
         <div class="col col-xs-12 col-md-12 col-lg-4">
           <aside class="aside-wrapper">
@@ -142,16 +149,15 @@
               <div class="quote-text">Take every chance you get in life, because some things only happen once.</div>
             </div>
           </aside>
-
         </div>
 
       </div>
-      <hr class="content-breakline">
-      <div class="load-button-wrapper">
+      <hr class="content-breakline hide-for-small">
+      <div class="load-button-wrapper hide-for-small">
         <button class="button load-button">Load more posts</button>
       </div>
     </div>
-  </main>
+  </div>
   <footer>
     <div class="main-footer">
       <div class="container">
@@ -175,7 +181,8 @@
         <form class="footer-form-wrapper">
           <input class="footer-input" type="text" placeholder="Full name">
           <input class="footer-input" type="text" placeholder="Email address">
-          <button class="button footer-form-button">Send!</button>
+          <button class="button footer-form-button hide-for-small">Send!</button>
+          <button class="button footer-form-button-small show-for-small">Send!</button>
         </form>
       </div>
     </div>
